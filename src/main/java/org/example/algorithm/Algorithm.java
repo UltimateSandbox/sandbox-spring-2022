@@ -5,15 +5,15 @@ import java.util.Map;
 
 public class Algorithm {
 
-    private static Map<Integer, Long> dictionary = new HashMap<>();
+    private static final Map<Integer, Long> dictionary = new HashMap<>();
 
     public static long fib(int n) {
 
-        if(n == 0) {
+        if (n == 0) {
             return 0L;
         }
 
-        if(n == 1) {
+        if (n == 1) {
             return 1L;
         }
 
