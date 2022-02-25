@@ -4,8 +4,11 @@ public class Calculator {
 
     public static void main(String[] args) {
         System.out.println(Calculator.divide(4, 0));
-        // FIXME start here on 2/17
-        System.out.println(Calculator.divide(4.0f, 0.0f));
+        try {
+            System.out.println(Calculator.divide(4.0f, 0.0f));
+        } catch (DivideByZeroException e) {
+            e.printStackTrace();
+        }
     }
 
     public static int divide(int a, int b) {
