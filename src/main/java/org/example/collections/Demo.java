@@ -32,8 +32,15 @@ public class Demo {
 
         list.forEach(System.out::println);
 
+        set1.clear();
+        set1.addAll(list);
 
+        set1.forEach(System.out::println);
 
+        queue3.add("What?");
+        queue3.clear();
+        queue3.addAll(set1);
 
+        queue3.forEach(System.out::println);
     }
 }
