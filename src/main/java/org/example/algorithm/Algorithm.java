@@ -9,10 +9,12 @@ public class Algorithm {
 
     public static long fib(int n) {
 
+        // base case
         if (n == 0) {
             return 0L;
         }
 
+        // base case
         if (n == 1) {
             return 1L;
         }
@@ -23,6 +25,7 @@ public class Algorithm {
 
     private static long memo(int m) {
 
+        // memoization
         Long value = dictionary.get(m);
 
         if (value != null) {
